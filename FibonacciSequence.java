@@ -15,19 +15,15 @@ public class FibonacciSequence {
 
   public static void fibSequence(int count) {
 
-    int firstInt, secondInt, sum = 0;
-    fibCount();
+    int firstInt = 0;
+    int secondInt = 1;
+    int sum = 0;
 
-    for(int i = 0; i == count; i++) {
-      firstInt = i;
-      secondInt = firstInt + 1;
+    for(int i = 0; sum <= count; i++) {
       sum = firstInt + secondInt;
       System.out.println(firstInt + " + " + secondInt + " = " + sum);
       firstInt = secondInt;
       secondInt = sum;
-      if (sum == count) {
-        System.exit(0);
-      }
     }
 
   }
